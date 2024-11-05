@@ -1,0 +1,75 @@
+Sales Forecast Analysis Report
+
+1. Introduction
+
+This sales analysis and forecasting report was developed to provide data-driven insights to support strategic decision-making in areas such as inventory management, promotions, and resource allocation. The analysis included a detailed examination of key sales drivers segmented by store type, location, discount application, and holiday periods. Additionally, a SARIMA model was constructed to forecast sales, accounting for observed seasonal patterns. This report highlights key insights from the analysis, model performance, and actionable recommendations.
+
+2. Key Metrics Overview
+
+    Total Sales: 8,058,000,332
+    Total Orders: 12,845,860
+    Average Sales per Store: 22,076,713
+    Average Orders per Store: 35,194
+
+3. Insights from Exploratory Analysis
+3.1 Sales by Store Type
+
+    Store Type S1 generated the highest sales, accounting for 41.50% of total sales. Store Type S4 had the highest average sales per store.
+    Hypothesis Testing: Statistical testing (p-value ≈ 0) confirmed that differences in sales between store types are significant, implying that store type is a key factor in driving sales performance.
+    Recommendation: Focus on optimizing support for high-performing store types, particularly S1 and S4, to maximize revenue.
+
+3.2 Sales by Location
+
+    Location L1 contributed the highest total sales (43.80%), while Location L2 had the highest average sales per store.
+    Hypothesis Testing: The impact of location on sales is statistically significant (p-value ≈ 0), suggesting that location-based factors strongly influence sales.
+    Recommendation: Concentrate marketing and operational efforts on high-performing locations, such as L1 and L2, to leverage their sales potential.
+
+3.3 Quarterly Sales Trends
+
+    Sales showed a seasonal pattern with a peak in Q2 and a dip in Q3.
+    Hypothesis Testing: Seasonal variations in sales were confirmed as statistically significant (p-value ≈ 0), indicating the reliability of these trends.
+    Recommendation: Plan inventory and promotions according to seasonal demand, with increased stock for Q2 and cost optimization for Q3.
+
+3.4 Impact of Holidays
+
+    Sales during non-holiday periods were higher on average compared to holiday periods.
+    Hypothesis Testing: The difference in sales between holiday and non-holiday periods is statistically significant (p-value ≈ 0), highlighting the effect of holiday timings on sales.
+    Recommendation: Tailor marketing strategies around holidays to capture potential demand without overextending inventory.
+
+3.5 Sales by Discount Application
+
+    Discounted sales were higher across all regions, with discounts contributing significantly to sales volumes.
+    Hypothesis Testing: Discounts significantly impact sales volumes (p-value ≈ 0), confirming their effectiveness in boosting sales.
+    Recommendation: Implement region-specific discount strategies to drive sales while balancing profit margins.
+
+4. SARIMA Model for Sales Forecasting
+4.1 Model Configuration and Results
+
+To predict future sales, a SARIMA (Seasonal Autoregressive Integrated Moving Average) model was constructed with a seasonal order of (1,1,2,30), reflecting a 30-day seasonality cycle.
+
+4.2 Model Performance Metrics
+
+    Mean Absolute Error (MAE): 2,802,568.10
+    Mean Squared Error (MSE): 12,752,820,039,683.20
+    Root Mean Squared Error (RMSE): 3,571,109.08
+    Mean Absolute Percentage Error (MAPE): 16.41%
+
+4.3 Interpretation of Model Accuracy
+
+    MAE and RMSE values indicate the average prediction error magnitude, with an RMSE of approximately 3.57 million, suggesting that the model’s predictions align reasonably with actual sales values.
+    MAPE of 16.41% shows that the model has a moderate level of accuracy, with predictions deviating by an average of 16.41% from actual sales values.
+
+Recommendation: Although the SARIMA model demonstrates a satisfactory level of accuracy, further improvement could be achieved by experimenting with different seasonal parameters or exploring alternative models, such as Prophet or SARIMAX with exogenous variables, if additional predictors become available.
+
+5. Summary of Recommendations
+
+Based on the analysis and forecast model results, the following recommendations are suggested to improve sales performance and planning accuracy:
+
+    Optimize High-Impact Store Types and Locations: Allocate resources and marketing efforts to high-performing store types (S1 and S4) and top sales locations (L1 and L2).
+    Adjust Inventory and Marketing to Seasonal Patterns: Anticipate higher sales in Q2 and reduced demand in Q3, optimizing stock levels and promotional campaigns accordingly.
+    Refine Holiday and Discount Strategies: Leverage discount offers strategically across regions and adjust holiday marketing to maximize potential sales without overextending inventory or costs.
+    Evaluate Model Performance Regularly: Re-train and refine the SARIMA model with updated data to maintain forecast accuracy over time, ensuring alignment with evolving sales trends.
+
+6. Conclusion
+
+This report provides a comprehensive view of the factors influencing sales and a data-driven approach to forecast future demand. The statistically significant impact of store type, location, seasonal trends, holidays, and discounts on sales highlights areas for targeted strategies. The SARIMA model offers a reliable forecast with moderate accuracy, supporting inventory and promotional planning. By following these insights and refining forecasting approaches, the organization can achieve a more proactive and efficient sales strategy.
